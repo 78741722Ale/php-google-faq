@@ -1,0 +1,27 @@
+/* Regola generale  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Regola al body  */
+body {
+    /* Overflow */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Header del sito  */
+#site_header {
+    height: 125px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+/* Corpo del sito */
+#site_main {
+    width: 100%;
+    border: 2px solid black;
+    height: calc(100% - 125px);
+}
