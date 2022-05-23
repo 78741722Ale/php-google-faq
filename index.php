@@ -90,34 +90,34 @@ $database = [
     <!-- /#site_main -->    
     <div id="site_main">
     <!-- Tutto questo racchiuso in un container md/xl -->
-
-    <!-- Primo For Each per la struttura dati -->
-    <!-- $database => array di riferimento -->
-    <!-- $faqs(date) => indici array di riferimento, è la key -->
-    <!-- $faq(posts) => indici array di riferimento, è la key -->
-    <?php foreach ($database as $faqs => $faq) : 
-        /* var_dump("Questa è la Key (faqs) ==> in pratica il titolo al di fuori dell'array");
-        var_dump($faqs);
-        var_dump("Questo è la Value (faq) ==> in pratica il contenuto (stringhe) dei vari array");
-        var_dump($faq); */
-        ?>
-        <h2> <?= $faqs?></h2>
-        <!-- $faq(posts) => è la key -->
-        <!-- $singleFaq($post) => è il value -->
-        <?php foreach ($faq as $singleFaq) : ?>
-            <p><?= $singleFaq ?> </p>
-        <!-- Closure del secondo for each -->    
-        <?php endforeach; ?> 
-        <!-- Closure del primo for each -->
-    <?php endforeach; ?> 
-
+        <div class="container-xl p-0 h-100 d-flex justify-content-center align-items-center">
+            <div class="row bordo m-0 h_80 w-100">
+                <!-- Primo For Each per la struttura dati -->
+            <!-- $database => array di riferimento -->
+            <!-- $faqs(date) => indici array di riferimento, è la key -->
+            <!-- $faq(posts) => indici array di riferimento, è la key -->
+            <?php foreach ($database as $faqs => $faq) : 
+                /* var_dump("Questa è la Key (faqs) ==> in pratica il titolo al di fuori dell'array");
+                var_dump($faqs);
+                var_dump("Questo è la Value (faq) ==> in pratica il contenuto (stringhe) dei vari array");
+                var_dump($faq); */
+                ?>
+                <h2><?= $faqs?></h2>
+                <!-- $faq(posts) => è la key -->
+                <!-- $singleFaq($post) => è il value -->
+                <?php foreach ($faq as $singleFaq) : ?>
+                    <p><?= $singleFaq ?> </p>
+                    <!-- Closure del secondo for each -->    
+                <?php endforeach; ?> 
+            <!-- Closure del primo for each -->
+            <?php endforeach; ?>
+            </div> 
+        </div>
     </div>
-    
+
+            
 
 
-
-    
-    
     <!-- Link a JS Bootstrap -->
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'></script>
 </body>

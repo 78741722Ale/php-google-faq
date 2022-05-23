@@ -5,23 +5,37 @@
     box-sizing: border-box;
 }
 
+/* Common utilities per verificare i container */
+.bordo {
+    border: 2px solid black;
+}
+
 /* Regola al body  */
 body {
     /* Overflow */
     overflow-x: hidden;
     overflow-y: scroll;
+    /* Width & Heigth */
+    width: 100vw;
 }
 
 /* Header del sito  */
 #site_header {
-    height: 125px;
-    border: 2px solid black;
+    height: 100px;
+    background-color: crimson;
     width: 100%;
 }
 
 /* Corpo del sito */
 #site_main {
     width: 100%;
-    border: 2px solid black;
-    height: calc(100% - 125px);
+    background-color: chartreuse;
+    height: calc(100% - 100px);
 }
+
+/* Altezza della row */
+.h_80 {
+    height: 80%;
+}
+
+
