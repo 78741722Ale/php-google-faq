@@ -84,14 +84,36 @@ $database = [
     
     <!-- /#site_header -->
     <div id="site_header">
+        <!-- Header Container -->
+        <div class="container-fluid p-0 h-100">
+            <!-- Row del container  -->
+            <div class="row h-100 w-100 p-0 m-0 flex-column">
+                <!-- Logo & Privacy Title -->
+                <div class="col-3 h-50 p-0">
+                <!-- Row della cella logo e privacy  --> 
+                    <div class="row h-100 bordo w-100 p-0 m-0">
+                        <!-- Logo Goes Here -->
+                        <div class="col-4 bordo">
+
+                        </div>
+                        <!-- Title Goes Here -->
+                        <div class="col-8 bordo">
+
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="col-8 h-50 bordo"></div>
+                <!-- Navbar -->
+            </div>
+        </div>
     </div>
     <!-- /#site_main -->    
     <div id="site_main">
     <!-- Tutto questo racchiuso in un container md/xl -->
-        <div class="container-xl p-0 h-100 d-flex justify-content-center align-items-center">
-            <div class="row bordo m-0 h_80 w-100">
+        <div class="container-xl p-5 h-100 main_class">
+            <div class="row m-0 p-5 w-100">
                 <!-- Primo For Each per la struttura dati -->
             <!-- $database => array di riferimento -->
             <!-- $faqs(date) => indici array di riferimento, è la key -->
@@ -102,7 +124,7 @@ $database = [
                 var_dump("Questo è la Value (faq) ==> in pratica il contenuto (stringhe) dei vari array");
                 var_dump($faq); */
                 ?>
-                <h2><?= $faqs?></h2>
+                <h3 class="pt-4 pb-3"><?= $faqs?></h3>
                 <!-- $faq(posts) => è la key -->
                 <!-- $singleFaq($post) => è il value -->
                 <?php foreach ($faq as $singleFaq) : ?>

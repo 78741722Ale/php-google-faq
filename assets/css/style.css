@@ -12,30 +12,43 @@
 
 /* Regola al body  */
 body {
-    /* Overflow */
     overflow-x: hidden;
     overflow-y: scroll;
     /* Width & Heigth */
     width: 100vw;
+    max-height: 100vh;
 }
 
 /* Header del sito  */
 #site_header {
-    height: 100px;
-    background-color: crimson;
+    height: 120px;
     width: 100%;
+    background-color: white;
+    border-bottom: 2px solid gray;
 }
+
+
+
+
 
 /* Corpo del sito */
 #site_main {
     width: 100%;
-    background-color: chartreuse;
-    height: calc(100% - 100px);
+    height: max-content;
+}
+#site_main  h3 {
+    font-weight: bold;
+}
+#site_main p {
+    font-weight: 500;
+    line-height: 1.3rem;
+    text-align: justify;
 }
 
-/* Altezza della row */
-.h_80 {
-    height: 80%;
+.main_class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* d-flex justify-content-center align-items-center */
 }
-
 
