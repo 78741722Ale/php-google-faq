@@ -90,28 +90,41 @@ $database = [
             <div class="row h-100 w-100 p-0 m-0 flex-column">
                 <!-- Logo & Privacy Title -->
                 <div class="col-3 h-50 p-0">
-                <!-- Row della cella logo e privacy  --> 
-                    <div class="row h-100 bordo w-100 p-0 m-0">
+                    <!-- Row della cella logo e privacy  --> 
+                    <div class="row h-100 w-100 p-0 m-0">
                         <!-- Logo Goes Here -->
-                        <div class="col-4 bordo">
-
+                        <div class="col-4 flex_cent">
+                            <img src="./assets/img/logo-Google.jpg" alt="Logo Google" >
                         </div>
                         <!-- Title Goes Here -->
-                        <div class="col-8 bordo">
-
+                        <div class="col-8 p-0 flex_start">
+                            <h3>Privacy & Termini</h3>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-8 h-50 bordo"></div>
                 <!-- Navbar -->
+                <div class="col-8 h-50 p-0">
+                    <!-- Row della cella navbar -->
+                    <div class="row h-100 d-flex align-items-center w-100 p-0 m-0">
+                       <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav gap-3">
+                                    <li class="nav-item active"><a class="nav-link" href="#">Introduzione</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Norme sulla privacy</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Termini di servizio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Tecnologie</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Domande frequenti</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>            
+                </div>
             </div>
         </div>
     </div>
     <!-- /#site_main -->    
     <div id="site_main">
-    <!-- Tutto questo racchiuso in un container md/xl -->
+        <!-- Tutto questo racchiuso in un container md/xl -->
         <div class="container-xl p-5 h-100 main_class">
             <div class="row m-0 p-5 w-100">
                 <!-- Primo For Each per la struttura dati -->
@@ -136,10 +149,6 @@ $database = [
             </div> 
         </div>
     </div>
-
-            
-
-
     <!-- Link a JS Bootstrap -->
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'></script>
 </body>

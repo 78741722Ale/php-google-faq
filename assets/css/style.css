@@ -10,6 +10,19 @@
     border: 2px solid black;
 }
 
+/* Common Utilities per display flex centrato */
+.flex_cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Common utilities per testo nell'header */
+.flex_start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 /* Regola al body  */
 body {
     overflow-x: hidden;
@@ -27,8 +40,23 @@ body {
     border-bottom: 2px solid gray;
 }
 
+.col-4 img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
 
+.nav-link {
+    color: black !important;
+    font-weight: 500 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
+}
 
+.nav-link:hover {
+    border-bottom: 3px solid rgb(4, 109, 247);
+    color: rgb(4, 109, 247) !important;
+}
 
 
 /* Corpo del sito */
